@@ -20,14 +20,19 @@ The container's entrypoint command runs plantuml with stdin/stdout piping enable
 java -jar plantuml.jar -p
 ```
 
+Building the image
+```bash
+docker build -t plantuml .
+```
+
 When run without any more arguments, the docker image will output the diagram as svg:
 
 ```bash
-cat diagram.puml | docker run --rm -i aplr/plantuml > diagram.svg
+cat diagram.puml | docker run --rm -i plantuml > diagram.svg
 ```
 
 If you want to output the diagram as PDF, you have to set the output type to `-tpdf`:
 
 ```bash
-cat diagram.puml | docker run --rm -i aplr/plantuml -tpdf > diagram.pdf
+cat diagram.puml | docker run --rm -i plantuml -tpdf > diagram.pdf
 ```
