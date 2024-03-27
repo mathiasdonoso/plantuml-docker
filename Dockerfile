@@ -7,7 +7,7 @@ RUN \
   apk add --no-cache graphviz wget ca-certificates && \
   apk add --no-cache graphviz wget ca-certificates ttf-dejavu fontconfig && \
   mkdir /plantuml && \
-  wget "http://downloads.sourceforge.net/project/plantuml/${PLANTUML_VERSION}/plantuml.${PLANTUML_VERSION}.jar" -O /plantuml/plantuml.jar && \
+  wget "https://github.com/plantuml/plantuml/releases/download/v${PLANTUML_VERSION}/plantuml-${PLANTUML_VERSION}.jar" -O /plantuml/plantuml.jar && \
   wget "http://beta.plantuml.net/batikAndFop.zip" -O deps.zip && \
   unzip deps.zip -d /plantuml && \
   apk del wget ca-certificates
