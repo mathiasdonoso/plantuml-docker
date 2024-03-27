@@ -20,7 +20,7 @@ The container's entrypoint command runs plantuml with stdin/stdout piping enable
 java -jar plantuml.jar -p
 ```
 
-Building the image
+Building the image:
 ```bash
 docker build -t plantuml .
 ```
