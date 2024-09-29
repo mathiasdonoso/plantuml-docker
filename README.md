@@ -31,8 +31,9 @@ When run without any more arguments, the docker image will output the diagram as
 cat diagram.puml | docker run --rm -i plantuml > diagram.svg
 ```
 
-If you want to output the diagram as PDF, you have to set the output type to `-tpdf`:
+If you want to output the diagram in other format like PNG or PDF, you have to set the output type using `-t[format]`, example: `-tpng` or `-tpdf`:
 
 ```bash
 cat diagram.puml | docker run --rm -i plantuml -tpdf > diagram.pdf
+cat diagram.puml | docker run --rm -i plantuml -tpng > diagram.png
 ```
