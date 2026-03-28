@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Replaced Alpine `apk` package manager with `microdnf` to match the new base image
 - Replaced stale Docker Hub badges in README with fork notice and link to this changelog
 - Removed standalone Java command from README — only Docker usage is maintained
+- Published image to Docker Hub as [`mathiasd88/plantuml-docker`](https://hub.docker.com/r/mathiasd88/plantuml-docker)
 
 ## [1.2024.7] - 2024-09-29
 
