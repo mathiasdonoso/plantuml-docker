@@ -1,24 +1,13 @@
 # PlantUML meets Docker
 
-<p align="center">
-    <img alt="Docker Cloud Automated build" src="https://img.shields.io/docker/cloud/automated/aplr/plantuml">
-    <img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/aplr/plantuml">
-    <img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/aplr/plantuml">
-    <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/aplr/plantuml">
-    <img alt="Docker Image Version (latest semver)" src="https://img.shields.io/docker/v/aplr/plantuml">
-</p>
+> **Fork notice:** This is a maintained fork of [aplr/plantuml](https://github.com/aplr/plantuml) by [@mathiasdonoso](https://github.com/mathiasdonoso).
+> The original project appears unmaintained. Changes from the original are tracked in [CHANGELOG.md](CHANGELOG.md).
 
 This docker container holds a full-fledged plantuml distribution with PDF-export support included.
 
-This image works great for exporting plantuml diagrams without installing java, graphviz and other dependencies, making it the perfect fit for running plantuml within your CI pipeline.
+This image works great for exporting plantuml diagrams without installing java, graphviz and other dependencies, making it the perfect fit for running plantuml in your CI pipeline or locally.
 
 ## Usage
-
-The container's entrypoint command runs plantuml with stdin/stdout piping enabled:
-
-```bash
-java -jar plantuml.jar -p
-```
 
 Building the image:
 ```bash
